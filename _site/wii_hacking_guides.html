@@ -15,7 +15,7 @@
         content="A minimalistic theme for Jekyll, based on hack.css
 ">
   <link rel="canonical"
-        href="https://wemake-services.github.io/" />
+        href="https://wemake-services.github.io/wii_hacking_guides" />
 
   <!-- hack.css -->
   <link rel="stylesheet" href="https://npmcdn.com/hack/dist/hack.css" />
@@ -37,17 +37,16 @@
 <meta property="og:title" content="jekyll-theme-hackcss" />
 <meta name="description" content="A minimalistic theme for Jekyll, based on hack.css" />
 <meta property="og:description" content="A minimalistic theme for Jekyll, based on hack.css" />
-<link rel="canonical" href="https://wemake-services.github.io/" />
-<meta property="og:url" content="https://wemake-services.github.io/" />
+<link rel="canonical" href="https://wemake-services.github.io/wii_hacking_guides" />
+<meta property="og:url" content="https://wemake-services.github.io/wii_hacking_guides" />
 <meta property="og:site_name" content="jekyll-theme-hackcss" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
-    "@type": "WebSite",
-    "name": "jekyll-theme-hackcss",
+    "@type": "WebPage",
     "headline": "jekyll-theme-hackcss",
     "description": "A minimalistic theme for Jekyll, based on hack.css",
-    "url": "https://wemake-services.github.io/"
+    "url": "https://wemake-services.github.io/wii_hacking_guides"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -68,7 +67,7 @@
   <nav class="menu" role="menubar">
     
     
-      <a class="menu-item active"
+      <a class="menu-item "
         role="menuitem" href="/" title="">
         Why the Wii? <div class="pull-right">»</div>
       </a>
@@ -83,7 +82,7 @@
         Survival Horror List <div class="pull-right">»</div>
       </a>
     
-      <a class="menu-item "
+      <a class="menu-item active"
         role="menuitem" href="/wii_hacking_guides" title="">
         WII Hacking Guides <div class="pull-right">»</div>
       </a>
@@ -100,65 +99,32 @@
         </aside>
 
         <main class="cell -9of12">
-          <div>
+          <h1 id="docs">Docs</h1>
 
-  <section>
-    <h1>It's 2018 bruh. Why the Wii?</h1>
+<h2 id="configuration">Configuration</h2>
 
-    <p>
-      You found your way to this site, so I'm guessing you already know. Still, it bears stating explicitly...
-    </p>
-  </section>
+<p>This theme can be configured by modifying the <code class="highlighter-rouge">_config.yml</code> file.</p>
 
-  <section>
-    <h2>The Wii is cheap.</h2>
+<h3 id="theme-settings">Theme settings</h3>
 
-    <p>
-      You can buy a wii at a thriftshop for $20. It will usually come with a couple games or controllers thrown in.
-      You can find a decent CRT TV or early flat panel television that works perfectly with the wii for literally free.
-      These things can be found on craigslist, the dump, or the side of the road.
-    </p>
-  </section>
-Getting started
-  <section>
-    <h2>The Wii makes a handy emulator.</h2>
+<p>This theme supports three different mode provided by <code class="highlighter-rouge">hack.css</code>:</p>
 
-    <p>
-      <code>hack.css</code> is a dead simple css framework. Chech out
-      <a href="http://hackcss.com/">hackcss.com</a> to know more.
-    </p>
-  </section>
+<ul>
+  <li><code class="highlighter-rouge">standard</code></li>
+  <li><code class="highlighter-rouge">markdown</code></li>
+  <li><code class="highlighter-rouge">dark</code></li>
+</ul>
 
-  <section>
-    <h2>The wii is a no-risk way to start hacking consoles.</h2>
+<p>Set <code class="highlighter-rouge">theme_mode</code> to the desired value.</p>
 
-    <p>
-      <ol>
-        <li>Make sure you have <code>Jekyll</code> up and running</li>
-        <li>Clone
-          <a href="https://github.com/wemake-services/jekyll-theme-hackcss">this repository</a>
-        </li>
-        <li>Customize it</li>
-        <li>Push to <a href="https://pages.github.com/">gh-pages</a></li>
-      </ol>
+<h3 id="available-customizations">Available customizations</h3>
 
-    </p>
-  </section>
-
-  <section>
-    <h2>The Wii will never be easier to get than it is now.</h2>
-
-    <p>
-      I am not one of these people that views games as an investment vehicle. Furthermore I don't believe that the
-      Wii is in immediate danger of becoming a collector's item any time soon. In fact, I do
-      not understand those people. I suppose they are the same types of folk who enjoy decaffinated coffee,
-      and non-alchoholic beer. I WILL SAY THIS, HOWEVER, I want to own a wii, and they are no longer making them. They will
-      never be MORE common than they are now. The games too, will become increasingly harder to find as time marches on. So, if
-      you want a wii, now is the time to get one.
-    </p>
-  </section>
-
-</div>
+<ul>
+  <li><code class="highlighter-rouge">your_name</code> and <code class="highlighter-rouge">email</code> strings to display them in different places on site</li>
+  <li><code class="highlighter-rouge">navigation</code> is an array of <code class="highlighter-rouge">text</code> and <code class="highlighter-rouge">url</code> pairs to render the menu</li>
+  <li><code class="highlighter-rouge">projects</code> is a setting that contains data for the <code class="highlighter-rouge">examples</code> page, every item must contain <code class="highlighter-rouge">name</code> and <code class="highlighter-rouge">link</code>, <code class="highlighter-rouge">image</code> and <code class="highlighter-rouge">description</code> are optional</li>
+  <li><code class="highlighter-rouge">social</code> contains an array of three required params: <code class="highlighter-rouge">service</code> is used to include a service icon by the <code class="highlighter-rouge"><span class="p">{</span><span class="err">%</span><span class="w"> </span><span class="err">include</span><span class="w"> </span><span class="err">icon-{{</span><span class="w"> </span><span class="err">service</span><span class="w"> </span><span class="p">}</span><span class="err">}.html</span><span class="w"> </span><span class="err">%}</span></code> command, <code class="highlighter-rouge">username</code> and <code class="highlighter-rouge">link</code> are quite obvious</li>
+</ul>
 
         </main>
       </div>

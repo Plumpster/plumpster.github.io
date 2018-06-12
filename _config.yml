@@ -27,12 +27,16 @@ your_name: wemake.services
 email: mail@sobolevn.me
 
 navigation:
-  - text: Home
+  - text: Why the Wii?
     url: /
-  - text: Docs
+  - text: Shovelware Chronicles
     url: /docs
-  - text: Examples
+  - text: Survival Horror List
     url: /examples
+  - text: WII Hacking Guides
+    url: /wii_hacking_guides
+  - text: Das Plumpy!
+    url: /das_plumpy
 
 projects:
   - name: git-secret
