@@ -1,6 +1,6 @@
 ---
 layout: default
-permalink: wii_hacking_guides
+permalink: das_plumpy
 ---
 
 # Docs
